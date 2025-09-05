@@ -1,3 +1,5 @@
+'''Program to convert a user input of wind speed in mph to knots or m/s'''
+
 def wind_speed_converter_mph(val, output_unit):
     """
     Convert wind speed from mph to m/s or knots.
@@ -15,6 +17,11 @@ def wind_speed_converter_mph(val, output_unit):
       return val * 0.44704
     if output_unit is 'knots': 
       return val * 0.86898
+
+a = float(input('What is your wind speed in mph?'))
+b = input('What unit of wind speed would you like? m/s or knots')
+
+print(wind_speed_converter_mph(a, b))
 
 
 
