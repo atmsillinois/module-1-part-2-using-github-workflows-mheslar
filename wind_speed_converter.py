@@ -13,9 +13,9 @@ def wind_speed_converter_mph(val, output_unit):
     """
     
     # Convert through mph to requested unit
-    if output_unit is 'm/s': 
+    if output_unit == 'm/s': 
       return val * 0.44704
-    if output_unit is 'knots': 
+    if output_unit == 'knots': 
       return val * 0.86898
 
 a = float(input('What is your wind speed in mph?'))
